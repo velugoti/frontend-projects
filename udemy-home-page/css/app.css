@@ -1,0 +1,199 @@
+/* RESET */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border: solid black 3px;
+  padding: 1rem;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-content {
+  position: absolute;
+  top:20%;
+  left: 20%;
+  color: white;
+}
+
+/* ================= CART ================= */
+
+/* Anchor element */
+.cart-content {
+  position: relative;
+}
+
+/* Hidden by default */
+.hidden {
+  display: none;
+}
+
+/* Dropdown box */
+.content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+/* SHOW on hover */
+.cart-content:hover .hidden {
+  display: block;
+}
+
+
+
+
+/* Optional: table styling */
+#cart-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#cart-list img {
+  width: 60px;
+}
+
+#cart-list th,
+#cart-list td {
+  padding: 5px;
+  text-align: left;
+}
+
+/* BUTTON */
+.button {
+  display: block;
+  margin-top: 10px;
+  padding: 1rem;
+  background: rgb(83, 83, 172);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.hero{
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+    height: 500px;
+  border:solid black 5px;
+}
+.bar{
+  background-color: #741d51;
+  padding: 2rem;
+  color:white;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 496px) {
+  .icons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    width: 100%;
+    text-align: center; /* optional */
+  }
+}
+
+
+.course-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.course{
+  border: solid grey 1px;
+  padding-bottom: 1rem;
+    flex: 0 0 calc(22.22% - 20px); /* 3 equal columns */
+}
+
+@media (max-width: 496px) {
+  .course-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  gap:1rem;
+  }
+
+  .course {
+    width: 100%;
+    text-align: center; /* optional */
+  }
+}
+
+
+
+
+.container-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap:10rem;
+  align-items: center;
+  flex-wrap: wrap;
+padding:1rem; 
+} 
+
+@media (max-width: 496px) {
+  .container-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  gap:1rem;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center; /* optional */
+  }
+}
+
+
+
+.menu{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link{
+   text-decoration: none;
+   color:grey;
+    
+  font-weight: 500;
+}

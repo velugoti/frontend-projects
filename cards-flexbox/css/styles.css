@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    background-color: rgb(86, 154, 214);
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (min-width:480px) {
+ .main-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entry {
+        flex: 0 1 calc(50% - 1rem);
+
+    }
+
+
+}
+
+@media screen and (min-width:780px) {
+ .main-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entry {
+        flex: 0 1 calc(33.3% - 1rem);
+
+    }
+
+
+}
+
+
+img {
+    max-width: 100%;
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin: 0;
+}
+.entry{
+margin-bottom: 1rem;
+background-color: white;
+
+}
+.content{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.content * {
+text-transform: uppercase;
+}
+
+.content p span {
+    color: pink;
+}
+
+.button {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none; /* remove underline */
+    border-radius: 5px;
+    font-weight: bold;
+margin: 1rem;
+}
+
+.button:hover {
+    background-color: darkblue;
+}
